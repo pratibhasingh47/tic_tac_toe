@@ -19,7 +19,7 @@ const winp = [
 ];
 
 const resetGame = () => {
-    turnO = true;
+    turnO = false;
     count = 0;
     enablebox();
     mc.classList.add("hide");
