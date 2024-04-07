@@ -68,11 +68,8 @@ const showWinner = (winner) => {
     disablebox();
 };
 
-
-
 const checkWinner = () => {
     for (let pattern of winp) {
-        /*console.log(pattern[0],pattern[1],pattern[2]);*/
 
         let p1v = boxes[pattern[0]].innerText;
         let p2v = boxes[pattern[1]].innerText;
