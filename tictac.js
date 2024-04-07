@@ -14,12 +14,12 @@ const winp = [
     [1, 4, 7],
     [2, 5, 8],
     [2, 4, 6],
-    [3, 4, 7],
+    [3, 4, 5],
     [6, 7, 8],
 ];
 
 const resetGame = () => {
-    turnO = false;
+    turnO = true;
     count = 0;
     enablebox();
     mc.classList.add("hide");
@@ -27,7 +27,7 @@ const resetGame = () => {
 
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
-        if (turnO === true) {
+        if (turnO) {
             box.innerText = "O";
             turnO = false;
         } else {
@@ -47,7 +47,7 @@ const draw =()=>{
     msg.innerText ="Oops ! -_- It is tie";
     mc.classList.remove("hide");
     disablebox();
-}
+};
 
 const disablebox = () => {
     for (let box of boxes) {
