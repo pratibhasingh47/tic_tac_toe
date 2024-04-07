@@ -82,6 +82,7 @@ const checkWinner = () => {
             if (p1v === p2v && p2v === p3v) {
                 console.log("Winner");
                 showWinner(p1v);
+                return true;
             }
         }
     }
