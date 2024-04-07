@@ -1,1 +1,1 @@
-Everybody in once in there life has played Tic-Tac-Toe. This mini-project involve many useful concept of javascript about how the user interact with website also it increses the understanding of more design concept and developed logical thinking. I hope you enjoy playing this game. 
+Everybody once in there life has played Tic-Tac-Toe. This mini-project involve many useful concept of javascript about how the user interact with website also it increses the understanding of more design concept and developed logical thinking. I hope you enjoy playing this game. 
