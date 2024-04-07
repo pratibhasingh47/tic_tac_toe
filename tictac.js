@@ -4,7 +4,7 @@ let newbtn = document.querySelector("#newbtn");
 let mc = document.querySelector(".msgContainer");
 let msg = document.querySelector("#msg");
 
-let turnO = false;
+let turnO = true;
 let count = 0;
 
 const winp = [
@@ -20,6 +20,7 @@ const winp = [
 
 const resetGame = () => {
     turnO = true;
+    count = 0;
     enablebox();
     mc.classList.add("hide");
 };
@@ -42,6 +43,12 @@ boxes.forEach((box) => {
     });
 });
 
+const draw =()=>{
+    msg.innerText ="Oops ! -_- It is tie";
+    mc.classList.remove("hide");
+    disablebox();
+}
+
 const disablebox = () => {
     for (let box of boxes) {
         box.disabled = true;
@@ -61,11 +68,7 @@ const showWinner = (winner) => {
     disablebox();
 };
 
-const draw =()=>{
-    msg.innerText ="Oops ! -_- It is tie";
-    mc.classList.remove("hide");
-    disablebox();
-}
+
 
 const checkWinner = () => {
     for (let pattern of winp) {
